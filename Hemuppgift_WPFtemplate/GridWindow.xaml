@@ -13,7 +13,7 @@
             <TextBlock Text="Column" Height="30" FontSize="15"/>
             <TextBox x:Name= "TxtColumn" Width="40" Height="18"/>
             <Button x:Name="BtnApply" Content="Apply" Width="55" Height="18" Click="BtnApply_Click"/>
-   </StackPanel>
+        </StackPanel>
     <Grid x:Name="GrdGridWindow">
       
         <Grid.RowDefinitions>

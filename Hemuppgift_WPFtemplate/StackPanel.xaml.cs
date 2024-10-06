@@ -23,5 +23,15 @@ namespace Hemuppgift_WPFtemplate
         {
             InitializeComponent();
         }
+
+        private void HorizontalButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void VerticalButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
