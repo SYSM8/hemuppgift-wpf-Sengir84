@@ -12,7 +12,7 @@
             <RadioButton Content="Horizontal" Click="HorizontalButton_Click"/>
             <RadioButton Content="Vertical" Click="VerticalButton_Click"/>
         </StackPanel>
-        <StackPanel>
+        <StackPanel x:Name="StackRect">
                 <Rectangle x:Name="RectRed" Fill="Red" Width="100" Height="100" Margin="5"/>
                 <Rectangle x:Name="RectOrange" Fill="Orange" Width="90" Height="90" Margin="5"/>
                 <Rectangle x:Name="RectYellow" Fill="Yellow" Width="80" Height="80" Margin="5"/>

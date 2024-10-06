@@ -26,12 +26,13 @@ namespace Hemuppgift_WPFtemplate
 
         private void HorizontalButton_Click(object sender, RoutedEventArgs e)
         {
-
+            StackRect.Orientation = Orientation.Horizontal;
+            
         }
 
         private void VerticalButton_Click(object sender, RoutedEventArgs e)
         {
-
+            StackRect.Orientation=Orientation.Vertical;
         }
     }
 }
