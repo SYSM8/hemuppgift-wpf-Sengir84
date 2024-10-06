@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
-        Title="GridWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="GridWindow" Height="500" Width="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+        <TextBlock Text="Row" Height="30" FontSize="15"/>
+            <TextBox x:Name= "TxtRow" Width="40" Height="18"/>
+            <TextBlock Text="Column" Height="30" FontSize="15"/>
+            <TextBox x:Name= "TxtColumn" Width="40" Height="18"/>
+            <Button x:Name="BtnApply" Content="Apply" Width="55" Height="18" Click="BtnApply_Click"/>
+   </StackPanel>
+    <Grid x:Name="GrdGridWindow">
+      
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="110"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+
+        </Grid.ColumnDefinitions>
+
     </Grid>
+    </StackPanel>
+
 </Window>

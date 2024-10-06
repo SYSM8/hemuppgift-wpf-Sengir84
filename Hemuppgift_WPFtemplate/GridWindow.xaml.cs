@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Hemuppgift_WPFtemplate
 {
@@ -23,5 +13,22 @@ namespace Hemuppgift_WPFtemplate
         {
             InitializeComponent();
         }
+
+        private void BtnApply_Click(object sender, RoutedEventArgs e)
+        {
+            int row = Convert.ToInt32(TxtRow.Text);
+            int column = Convert.ToInt32(TxtColumn.Text);
+
+            Button button = new Button()
+            {
+                Content = $"Row {TxtRow.Text} Column {TxtColumn.Text}",
+                Background = Brushes.LightGreen,
+            };
+
+            Grid.SetRow(button , row);
+            Grid.SetColumn(button , column);
+            GrdGridWindow.Children.Add(button);
+        }
+
     }
 }
