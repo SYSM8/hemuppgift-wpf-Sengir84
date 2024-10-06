@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
         Title="StackPanel" Height="450" Width="800">
-
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
     <StackPanel>
         <StackPanel Orientation="Horizontal" Width="500" HorizontalAlignment="Left" VerticalAlignment="Top">
             <RadioButton Content="Horizontal" Click="HorizontalButton_Click"/>
@@ -19,8 +19,10 @@
                 <Rectangle x:Name="RectLightGreen" Fill="LightGreen" Width="70" Height="70" Margin="5"/>
                 <Rectangle x:Name="RectGreen" Fill="Green" Width="60" Height="60" Margin="5"/>
                 <Rectangle x:Name="RectLightBlue" Fill="LightBlue" Width="50" Height="50" Margin="5"/>
-                 <Rectangle x:Name="RectBlue" Fill="Blue" Width="40" Height="40" Margin="5"/>
+                <Rectangle x:Name="RectBlue" Fill="Blue" Width="40" Height="40" Margin="5"/>
                 <Rectangle x:Name="Black" Fill="Black" Width="30" Height="30" Margin="5"/>
-            </StackPanel>
+            
+        </StackPanel>
     </StackPanel>
+    </ScrollViewer>
 </Window>
