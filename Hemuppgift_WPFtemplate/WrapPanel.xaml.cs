@@ -23,5 +23,15 @@ namespace Hemuppgift_WPFtemplate
         {
             InitializeComponent();
         }
+
+        private void Horizontal_Click(object sender, RoutedEventArgs e)
+        {
+            PnlWrap.Orientation = Orientation.Horizontal;
+        }
+
+        private void Vertical_Click(object sender, RoutedEventArgs e)
+        {
+            PnlWrap.Orientation=Orientation.Vertical;
+        }
     }
 }
