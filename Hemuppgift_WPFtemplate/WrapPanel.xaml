@@ -6,23 +6,30 @@
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
         Title="WrapPanel" Height="450" Width="800">
-    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-        <StackPanel>
-            <StackPanel Orientation="Horizontal" Width="500" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <RadioButton Content="Horizontal" Click="Horizontal_Click"/>
-                <RadioButton Content="Vertical" Click="Vertical_Click"/>
-            </StackPanel>
-            <WrapPanel x:Name="PnlWrap" >
-                <Ellipse Fill="Red" Height="100" Width="100"/>
-                <Ellipse Fill="Orange" Height="90" Width="90"/>
-                <Ellipse Fill="Yellow" Height="80" Width="80"/>
-                <Ellipse Fill="LightGreen" Height="70" Width="70"/>
-                <Ellipse Fill="Green" Height="60" Width="60"/>
-                <Ellipse Fill="LightBlue" Height="50" Width="50"/>
-                <Ellipse Fill="Blue" Height="40" Width="40"/>
-                <Ellipse Fill="Black" Height="30" Width="30"/>
 
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="0">
+                <RadioButton Content="Horizontal" Height="20" Click="Horizontal_Click"/>
+                <RadioButton Content="Vertical" Height="20" Click="Vertical_Click"/>
+            </StackPanel>
+           
+            <WrapPanel x:Name="PnlWrap" Grid.Row="1" HorizontalAlignment="Left">
+                <Ellipse Fill="Red" Height="100" Width="100" Margin="5"/>
+                <Ellipse Fill="Orange" Height="90" Width="90" Margin="5"/>
+                <Ellipse Fill="Yellow" Height="80" Width="80" Margin="5"/>
+                <Ellipse Fill="LightGreen" Height="70" Width="70" Margin="5"/>
+                <Ellipse Fill="Green" Height="60" Width="60" Margin="5"/>
+                <Ellipse Fill="LightBlue" Height="50" Width="50" Margin="5"/>
+                <Ellipse Fill="Blue" Height="40" Width="40" Margin="5"/>
+                <Ellipse Fill="Black" Height="30" Width="30" Margin="5"/>
             </WrapPanel>
-        </StackPanel>
+        </Grid>
     </ScrollViewer>
 </Window>
